@@ -1,0 +1,11 @@
+CREATE DATABASE `sshop` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `sshop`;
+CREATE TABLE `sshop`.`users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NULL DEFAULT NULL,
+  `mail` varchar(255) NULL DEFAULT NULL,
+  `password` varchar(255) NULL DEFAULT NULL,
+  `point` varchar(255) NULL DEFAULT NULL,
+  `shopcar` varchar(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;

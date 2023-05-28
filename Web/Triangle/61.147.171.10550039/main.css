@@ -1,0 +1,44 @@
+div.topleft {
+    margin-bottom: 1px;
+    margin-left: 1px;
+    width: 128px;
+    height: 128px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+div.topright {
+    margin-bottom: 1px;
+    margin-left: 1px;
+    width: 128px;
+    height: 128px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+div.middle {
+    position: fixed;
+    top: 50%;
+    left: 33%;
+    text-align: center;
+    width: 33%;
+    height: 100px;
+}
+
+div.bottomcenter {
+    margin-bottom: 1px;
+    margin-left: 1px;
+    width: 33%;
+    height: 128px;
+    position: fixed;
+    bottom: 0;
+    right: 33%;
+    left: 33%;
+    text-align: center;
+}
+
+div.middle input {
+    width: 300px;
+}

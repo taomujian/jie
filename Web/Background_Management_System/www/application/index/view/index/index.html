@@ -1,0 +1,46 @@
+{extend name="./common/base" /}
+{block name="reg"}
+{if session('uid')}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion"
+               href="#collapseTwo">
+                通知
+            </a>
+        </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse in">
+        <div class="panel-body">
+            欢迎您，{:session('username')}!<br>右上角可以查看个人中心哦
+        </div>
+    </div>
+</div>
+
+
+{else/}
+<div class="alert alert-warning" role="alert">
+    <strong>请先登陆</strong>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion"
+               href="#collapseTwo">
+                友情提示
+            </a>
+        </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse in">
+        <div class="panel-body">
+            1、如果你不是网站管理员请速速离开！！！
+            <br>
+            2、我才不会愚蠢到把秘密放到数据库里呢:)
+            <br>
+            3、关键字我都过滤啦，天啊我好坏:)
+        </div>
+    </div>
+</div>
+{/if}
+
+{/block}

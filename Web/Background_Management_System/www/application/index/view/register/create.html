@@ -1,0 +1,25 @@
+{extend name='./common/base'/}
+{block name='reg'}
+<div style="padding: 100px 100px 10px;">
+    <form class="bs-example bs-example-form" role="form" action="/xinan/public/index/Register/add" method="post">
+        <div class="input-group">
+            <span class="input-group-addon">用户名</span>
+            <input type="text" name="username" id="inputID" class="form-control" value="" title="" required="required" placeholder="输入用户名 长度在3-15之间">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">密码</span>
+            <input type="password" name="password" id="inputID" class="form-control" value="" title="" required="required" placeholder="输入密码 长度在3-15之间">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">确认密码</span>
+            <input type="password" name="password_confirm" id="inputID" class="form-control" value="" title="" required="required" placeholder="确认密码">
+        </div>
+        <br>
+            <input type="submit" name="submit" id="inputID" class="form-control" value="提交" title="" required="required">
+    </form>
+</div>
+
+
+{/block}

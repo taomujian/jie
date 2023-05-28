@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+    	.round_icon{
+			  width: 88px;
+			  height: 88px;
+			  display: flex;
+			  border-radius: 50%;
+			  align-items: center;
+			  justify-content: center;
+			  overflow: hidden;
+			  margin: 0 auto;
+			}
+    </style>
+    <title>easyupload</title>
+</head>
+
+<body background="background.jpg" style="background-size:cover">
+	<br>
+	<br>
+	<br>
+	<br>
+	<div style="text-align: center;">
+		<img src="uploads/index.php" class="round_icon" align="middle"  alt="">
+		<br>
+	    <form action="index.php" method="post" enctype="multipart/form-data">
+	        <label for="file" style="color: blue;">更换头像</label>
+	        <input type="file" name="fileUpload" id="file" style="color: blue;"><br>
+	        <input type="submit" name="upload" value="提交">
+	    </form>
+	</div>
+</body>
+
+</html>

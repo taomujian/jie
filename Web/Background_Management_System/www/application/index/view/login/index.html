@@ -1,0 +1,26 @@
+{extend name='./common/base' /}
+{block name='reg'}
+{if !session('uid') }
+<div style="padding: 100px 100px 10px;">
+    <form class="bs-example bs-example-form" role="form" action="/xinan/public/index/Login/login" method="post">
+        <div class="input-group">
+            <span class="input-group-addon">用户名</span>
+            <input type="text" name="username" id="inputID" class="form-control" value="" title=""
+                   required="required">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">密码</span>
+            <input type="password" name="password" id="inputID" class="form-control" value="" title=""
+                   required="required">
+        </div>
+        <br>
+            <input type="submit" name="submit" id="inputID" class="form-control" value="登陆" title=""
+                   required="required">
+    </form>
+</div>
+
+{else /}
+    <h1>hello {:session('username')}</h1>
+{/if}
+{/block}
