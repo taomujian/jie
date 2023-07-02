@@ -30,5 +30,5 @@ if(s1<0):
 if(s2<0):
     s2=-s2
     c2=gmpy2.invert(c2,n1)
-m=long_to_bytes((pow(c1,s1,n1)*pow(c2,s2,n1))%n1)
+m = long_to_bytes((pow(c1,s1,n1)*pow(c2,s2,n1))%n1)
 print(m)

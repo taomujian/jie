@@ -1,0 +1,19 @@
+import gmpy2
+from Crypto.Util.number import *
+from Crypto.PublicKey import RSA
+
+c = bytes_to_long(open('547de1d50b95473184cd5bf59b019ae8/flag.enc','rb').read())
+c = 49412914049026066227292604633959399022586841904231599586841156187258952420473
+pub = RSA.importKey(open('547de1d50b95473184cd5bf59b019ae8/pubkey.pem').read())
+
+n = pub.n
+n = 87924348264132406875276140514499937145050893665602592992418171647042491658461
+e = pub.e
+e= 65537
+
+p = 275127860351348928173285174381581152299
+q = 319576316814478949870590164193048041239
+phi = (p-1)*(q-1)
+d = gmpy2.invert(e, (p - 1) *(q - 1))
+m = pow(c, d, n)
+print(long_to_bytes(m))
