@@ -1,0 +1,2 @@
+The known-plaintext attack (KPA) is an attack model for cryptanalysis where the attacker has samples of both the plaintext (called a crib), and its encrypted version (ciphertext). These can be used to reveal further secret information such as secret keys and code books. The term "crib" originated at Bletchley Park, the British World War II decryption operation. 
+The flag is CTF{6d5eba48508efb13dc87220879306619}
