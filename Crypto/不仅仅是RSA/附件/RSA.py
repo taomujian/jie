@@ -1,0 +1,1 @@
+from flag import flagfrom Crypto.Util.number import *import randomp=getPrime(256)q=getPrime(256)e=random.randint(1,65537)n=p*qm=bytes_to_long(flag1)c=pow(m,e,n)print c,e,np=getPrime(256)n=p*qm=bytes_to_long(flag2)c=pow(m,e,n)print c,e,n
