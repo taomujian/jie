@@ -1,0 +1,26 @@
+function my_main( )
+clc;
+clear;
+
+y = audioread('godwave.wav');
+he = 0;
+data = [];
+for i = 1:length(y)
+    he = he + abs(y(i,1));
+    if mod(i,64) == 0
+        if he > 10
+            data = [data,1];
+        else
+            data = [data,0];
+        end
+        he = 0;
+    end
+end
+
+fid = fopen('data.txt','w');
+for i = 1:length(data)
+    fprintf(fid,'%d',data(1,i));
+end
+fclose(fid);
+
+end

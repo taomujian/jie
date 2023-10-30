@@ -1,4 +1,4 @@
-import flag
+import Crypto.interesting1.flag as flag
 import hashlib
 from Crypto.Util.number import getPrime, long_to_bytes, bytes_to_long
 from Crypto.Cipher import AES

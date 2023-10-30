@@ -1,0 +1,33 @@
+#!/usr/bin/python
+from base64 import *
+
+arr=[
+		'5L2g5Lus5aW9',
+		'5oiR5piv5LiA5ZCN5oKy5YKs55qE5YmN56uv',
+		'5oiR5pys6K+l5bm456aP5b+r5LmQ55qE5YaZ552A5YmN56uv',
+		'57uT5p6c5Y206KKr5peg6Imv55qE5p+g5qqs5Y+U5Y+U5ouJ5p2l5Ye66aKY',
+		'5Y+j5Lqo77yM5oiR5omN5LiN5Lya5Ye66aKY5ZGi77yM5oiR5bCx6YCB5L2g5Lus5LiA55m+5YiG5bCx5aW95LqG5Zib',
+		'5ZSJ77yM5Lmf5LiN55+l6YGT5Lya5LiN5Lya6KKr6aqC55qE6K+0',
+		'5Y+v5piv5oiR55yf55qE5LiN5Lya5Ye66aKY5ZGA',
+		'5oy66K+05Ye66aKY6L+Y6KaB54OkKOWIkuaOiSnogIPohJHmtJ4=',
+		'6L+Z5bm05aS05YmN56uv55yf5LiN5a655piT5ZWK',
+		'5ZOm77yM5a+55LqG',
+		'5beu54K55b+Y5LqG6K+0',
+		'6aKY55uu5o+Q56S65pivOui/meaYr+S4gOmBk+S7o+eggemYheivu+mimA==',
+		'5Luj56CB5Zyw5Z2A5L2g5Lus5Y+v5Lul5om+5om+77yM5oiR5Lmf6K6w5LiN5riF5o6J5Zyo5ZOq6YeM5LqGMjMzMw==',
+		'6K+d6K+06L+Z5qC357uZ5o+Q56S65piv5LiN5piv5pyJ54K55ZWw5Zem5ZWK',
+		'566X5LqG77yM5bCx6L+Z5qC35ZCn77yM5aW957Sv5ZGA',
+		'cC5zLjrmnIDlkI7nmoTnrZTmoYjmmK/kuIDmrrViYXNlNjTnoIHvvIzkuI3pnIDopoHop6PnoIE=',
+		'cC5wLnMuOui/memBk+mAgeWIhumimOivt+S4jeimgeWkquaEn+iwouaIkQ==',
+		'cC5wLnAucy465pys5Lq65Y2V6Lqr77yMT1Ja77yM6Jm954S26YCJ5omL5Y+v6IO95rKh5pyJ5aa557q4KOWbpyk=',
+		'5LiJ5pel5ZCO77yM5oiR6KKr5p+g5qqs5Y+U5Y+U5pq05omT5LqG5LiA6aG/77yM5ZOt5Ye65aOwfg==',
+		'5Y+U5Y+U6K+06L+Z5Liq5by55qGG5aSq54Om5LqG77yM5oiR6K+05L2g5Y+v5Lul5YWz5o6J5ZWK',
+		'5Y+U5Y+UOiLkvaDmsqHor7TlhbPmjonkuI3kvJrlvbHlk43lgZrpopjnmoTllYoi',
+		'6KKr5aSa5qyh5pq05omT5ZCO5bCP55Sf6KGo56S677yM5bCP55Sf6KaB5pCe5LqL5oOF',
+		'5omA5Lul5bCP55Sf5oqK5pyq5Y6L57yp55qE5Luj56CB55u05o6l5pS+5Zyo5LqG5Y6L57yp5Luj56CB55qE5ZCM57qn55uu5b2V',
+		'5paH5Lu25ZCN5pivOndveWFvZ2Fvc2hpcWluZy5nYW9zaGlxaW5n77yM5ZCE5L2N5ou/5aW956aP5Yip77yM6JKZ5aOw5Y+R5aSn6LSi'
+	]
+for i in range(len(arr)):
+	print(b64decode(arr[i]).decode())
+
+print(b64decode('5L2g5LiN5Lya5Lul5Li66L+Z5piv562U5qGI5ZCnPw==').decode())

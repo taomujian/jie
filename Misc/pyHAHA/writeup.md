@@ -10,8 +10,7 @@
 
 > 010 Editor打开后发现galf字符,猜测是倒序了,用flag.py得到正序的文件,再次打开,发现少文件头03F30D0A,补上,反编译成功,且发现存在一个mp3文件.
 
-> mp3文件用audacity没发现,用DeEgger Embedder获得了隐藏的文件,里面是许多base32编码字符,直接解码得到的东西不对,猜测隐写,尝试发现base32解码再编码后尾部不同
-是有隐写了,用flag2.py得到隐写的数据.
+> mp3文件用audacity没发现,用DeEgger Embedder获得了隐藏的文件,里面是许多base32编码字符,直接解码得到的东西不对,猜测隐写,尝试发现base32解码再编码后尾部不同.是有隐写了,用flag2.py得到隐写的数据.
 
 > 分析反编译的python文件,encrypt实现的是一个256bit随机数生成器的功能,generate实现的是在有限域GF(2256)下的平方运算：new_key=(old_key+seed)<sub>2</sub>,flag1和flag2的密文在前面的zip注释信息已给出,脚本对三段明文使用了同个Seed做了加密,其中后两段明文和密文还有第一段的密文（在那大段的base32里）已知
 
