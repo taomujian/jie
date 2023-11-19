@@ -4,7 +4,7 @@
 
 > 注册账号,登陆后发现提示要成为admin用户,cookie中session是jwt,按照经验是要找到密钥,然后进行替换.用c-jwt-cracker未果.在注册处发现存在SQL注入漏洞,利用脚本跑到了admin密码为h4ck4fun
 
-> 登陆后提示访问flag目录,这个页面只有session中isadmin的值为1时才可以,此时多了一个修改邮箱的功能,mail参数多次尝试,发现存在式化字符串漏洞
+> 登陆后提示访问flag目录,这个页面只有session中isadmin的值为1时才可以,此时多了一个修改邮箱的功能,mail参数多次尝试,发现存在格式化字符串漏洞
 
 ```
 {user.__class__.__init__.__globals__[current_app].config}
